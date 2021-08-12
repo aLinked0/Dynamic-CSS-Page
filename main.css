@@ -1,6 +1,20 @@
 html, body{
     background-color: hsl(0, 0%, 95%);
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.div_sedans a {
+    color: hsl(31, 77%, 52%);
+}
+.div_suvs a{
+    color: hsl(184, 100%, 22%);
+}
+.div_luxury a{
+    color: hsl(179, 100%, 13%);
+}
 button {
     background-color: white;
     border: 2px solid white ;
@@ -8,20 +22,20 @@ button {
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: inline-block; align-content: bottom;
     margin: 0;
     border-radius: 20px;
     transition-duration: 0.4s;
     cursor: pointer;
-  }
+}
 .mainBox{
-    /* revise this one */
+    /* revise this one 
     box-shadow: 7px 7px 20px 0   rgba(0, 0, 0, 0.08), 20px 20px 10px 0px rgba(0, 0, 0, 0.001);
-    border-radius: 20px;
+    border-radius: 20px;    */  border: 2px dotted red;
     display: flex;
 
-    width: 70%; height: auto;
-    padding: 50px;
+    width: 70vw; max-width: 960px;
+    height: auto;
     margin: 60px;
     margin-left: auto;
     margin-right: auto;
@@ -36,13 +50,11 @@ button {
     font-size: 15px;
     font-family: 'Lexend Deca', sans-serif;
     margin-top: 25px;
-    margin-bottom: 75px;
-}
+    margin-bottom: 75px;    }
 h2 {
-    font-weight: 700; font-size: 30px;
+    font-weight: 700; font-size: 20px;
     text-transform: uppercase;
-    font-family: 'Big Shoulders Display', cursive;
-}
+    font-family: 'Big Shoulders Display', cursive;  }
 .div_sedans {       /* column 01 */
     width: 33%;
     height: auto;
@@ -54,18 +66,19 @@ h2 {
 .div_sedans button{     /* button when not interacted with*/
     background-color: white; 
     color: hsl(31, 77%, 52%); 
-    border: 2px solid white;
-}
+    border: 2px solid white;    }
 .div_sedans button:hover{      /* button when hovered over*/
     background-color: hsl(31, 77%, 52%);
+}
+.div_sedans a:hover {
     color: white;
 }
+
 .div_suvs{          /* column 02 */
     width: 33%;
     height: auto;
     padding: 5%;
-    background-color: hsl(184, 100%, 22%);
-}
+    background-color: hsl(184, 100%, 22%);  }
 .div_suvs button{     /* button when not interacted with*/
     background-color: white; 
     color: hsl(184, 100%, 22%); 
@@ -73,9 +86,10 @@ h2 {
 }
 .div_suvs button:hover{      /* button when hovered over*/
     background-color: hsl(184, 100%, 22%);
+}
+.div_suvs a:hover{
     color: white;
 }
-
 .div_luxury {       /* column 03 */
     width: 33%;
     height: auto;
@@ -87,9 +101,50 @@ h2 {
 .div_luxury button{     /* button when not interacted with*/
     background-color: white; 
     color: hsl(179, 100%, 13%); 
-    border: 2px solid white;
-}
+    border: 2px solid white;    }
 .div_luxury button:hover{      /* button when hovered over*/
     background-color: hsl(179, 100%, 13%);
+}
+.div_luxury a:hover {
     color: white;
+}
+
+@media screen and (max-width:720px)
+{
+    .mainBox
+    {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .mainBox div
+    {
+        width: auto;
+        min-height: 400px;
+        height: auto;
+        padding: 25px;
+        
+        /*  border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 0px;
+        border-top-left-radius: 0px;  */
+    }
+    .div_sedans {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .div_suvs {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .div_luxury {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
 }
