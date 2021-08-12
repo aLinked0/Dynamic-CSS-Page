@@ -30,9 +30,6 @@ button {
     cursor: pointer;
 }
 .mainBox{
-    /* revise this one 
-    box-shadow: 7px 7px 20px 0   rgba(0, 0, 0, 0.08), 20px 20px 10px 0px rgba(0, 0, 0, 0.001);
-    border-radius: 20px;    */
     display: flex;
 
     width: 70vw; max-width: 960px;
@@ -110,6 +107,8 @@ h2 {
     color: white;
 }
 
+/* phone version */
+
 @media screen and (max-width:720px)
 {
     .mainBox
@@ -121,14 +120,8 @@ h2 {
     .mainBox div
     {
         width: auto;
-        min-height: 400px;
         height: auto;
         padding: 25px;
-        
-        /*  border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-        border-top-left-radius: 0px;
-        border-top-left-radius: 0px;  */
     }
     .div_sedans {
         border-top-left-radius: 10px;
