@@ -31,7 +31,7 @@ button {
 .mainBox{
     /* revise this one 
     box-shadow: 7px 7px 20px 0   rgba(0, 0, 0, 0.08), 20px 20px 10px 0px rgba(0, 0, 0, 0.001);
-    border-radius: 20px;    */  border: 2px dotted red;
+    border-radius: 20px;    */
     display: flex;
 
     width: 70vw; max-width: 960px;
